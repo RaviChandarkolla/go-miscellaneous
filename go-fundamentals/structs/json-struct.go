@@ -21,7 +21,7 @@ type RectangleCustomized struct {
 	Height int `json:"-"` //will never be encoded
 }
 
-func main() {
+func main3() {
 	//create an instance of a Rectangle
 	r := &Rectangle{10, 20, 30, 40}
 
