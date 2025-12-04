@@ -12,6 +12,7 @@ type Rectangle struct {
 	Left   int
 	Width  int
 	Height int
+	UpDown int
 }
 
 type RectangleCustomized struct {
@@ -19,11 +20,12 @@ type RectangleCustomized struct {
 	Left   int `json:"left,omitempty"`
 	Width  int `json:"width,omitempty"`
 	Height int `json:"-"` //will never be encoded
+	UpDown int `json:"up-down,omitempty"`
 }
 
 func main3() {
 	//create an instance of a Rectangle
-	r := &Rectangle{10, 20, 30, 40}
+	r := &Rectangle{10, 20, 30, 40, 50}
 
 	//create a new JSON encoder over stdout
 	//and encode the struct into JSON
@@ -33,7 +35,7 @@ func main3() {
 	}
 
 	//create an instance of a Rectangle
-	rc := RectangleCustomized{10, 20, 30, 40}
+	rc := RectangleCustomized{10, 20, 30, 40, 50}
 
 	//marshal into JSON buffer
 	buffer, err := json.Marshal(rc)

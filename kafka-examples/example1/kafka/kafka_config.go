@@ -1,0 +1,6 @@
+package kafka
+
+func StartKafka() {
+	
+
+}

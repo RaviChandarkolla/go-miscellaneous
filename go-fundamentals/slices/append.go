@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main3() {
+func main5() {
 	mySlice := make([]int, 1, 4)
 
 	fmt.Printf("Length starts out as %d with a capacity of %d \n", len(mySlice), cap(mySlice))
@@ -18,4 +18,10 @@ func main3() {
 	newSlice := []int{10, 20, 30, 40}
 	mySlice1 = append(mySlice1, newSlice...)
 	fmt.Printf("Length starts out as %d with a capacity of %d \n", len(mySlice1), cap(mySlice1))
+
+	var msg []string
+	fmt.Print(msg)
+
+	msg = append(msg, "dummy")
+	fmt.Print(msg)
 }

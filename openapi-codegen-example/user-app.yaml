@@ -1,0 +1,4 @@
+paths:
+  /v1/something:
+    post:
+      operationId: createThing

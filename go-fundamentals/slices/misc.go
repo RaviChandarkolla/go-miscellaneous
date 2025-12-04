@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main4() {
 	mySlice := []int{1, 2, 3, 4, 5}
 	fmt.Printf("Length starts out as %d with a capacity of %d \n", len(mySlice), cap(mySlice))
 
